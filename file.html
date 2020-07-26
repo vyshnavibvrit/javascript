@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js"></script>
+    <title>Registration form</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <div class='main'>
+        <form>
+            <label>*First name :</label>
+            <input type="text" id="fs" class="text_field" onchange="back('fs')"><br>
+            <label>*Last name :</label>
+            <input type="text" id="ls" class="text_field" onchange="back('ls')"><br>
+            <label>*Age :</label>
+            <input type="number" maxlength="number" id="age" class="text_field" onchange="back('age')"><br>
+            <label>*Date of birth :</label>
+            <input type="date" id="dob" class="text_field" onchange="back('dob')"><br>
+            <label>*Gender :</label>
+            <div class='gender'>
+                <input type="radio" id="male" name="gender"><span>Male</span><br>
+                <input type="radio" id="female" name="gender"><span>Female</span><br>
+                <input type="radio" id="other" name="gender"><span>Other</span>
+            </div>
+        </form>
+        <button onclick="validate_form()">Submit</button>
+    </div>
+</body>
+</html>
